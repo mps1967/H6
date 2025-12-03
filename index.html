@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <Head>
+<html lang="sv">
+<Head>
+    <meta charset="utf-8">
     <title>Övning6</title>
 </Head>
-<Header>
-    FilmBolaget FS Top
-    <img src="1f642.png" alt="Logotyp">
-</Header>
-<Body>
+<body>
+    <Header>
+        FilmBolaget FS Top
+        <img src="1f642.png" alt="Logotyp">
+    </Header>
 
-kort informationssnutt om när filmen har premiär, regi, 
-skådespelare samt en kort beskrivning av filmen.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yi04TMCudg8?si=u_nRPuRt2BxYeaZ3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</Body>
+    <p>
+        Kort informationssnutt om när filmen har premiär, regi, 
+        skådespelare samt en kort beskrivning av filmen.
+    </p>
+    <iframe 
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Yi04TMCudg8?si=u_nRPuRt2BxYeaZ3"
+        title="YouTube video player"
+        
+        allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share
+        "
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+    ></iframe>
+    <p>
+        Youtube iframe kommer med frameborder=\"0\" men validator.w3.org 
+        säger det är fel.
+    </p>
     <footer>
          Viktiga länkar läggs längst ned på sidan direkt innan footern. 
         <h1>Viktiga Länkar:</h1>
         <ul>
-            <a href="https://lexicongruppen.se/">LEXICON</a>
-        </ul>
-        <ul>
-            <a href="https://www.w3schools.com">W3Schools</a>
+            <li><a href="https://lexicongruppen.se/">LEXICON</a></li>
+            <li><a href="https://www.w3schools.com">W3Schools</a></li>
+            <li><a href="https://validator.w3.org/">validator.w3.org</a></li>
         </ul>
         FilmBolaget FS Bottom
     </footer>
+</body>
 </html>
