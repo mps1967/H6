@@ -3,17 +3,54 @@
 <Head>
     <meta charset="utf-8">
     <title>Övning6</title>
+    <style>
+        div.mytext {
+            
+            color: rgb(255, 255, 255);
+            background-color:rgb(170, 98, 26);
+            font-family: monospace;
+            font-size: 150%;
+            align-content: center;
+        }
+        ul.myul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(127, 0, 0);
+            font-family: monospace;
+            color: rgb(255, 255, 255);
+        }
+        li.myli {
+            float: left;
+            display: block;
+            padding-left: 8px;
+            padding-right: 8px;
+            font-family: monospace;
+            background-color: rgb(127, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+        footer.myfo {
+            height: 50px;
+            font-family: monospace;
+            background-color: rgb(127, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
 </Head>
 <body>
     <Header>
+        <div class="mytext">
         FilmBolaget FS Top
         <img src="1f642.png" alt="Logotyp">
+        </div>
     </Header>
-
+<div class="mytext">
     <p>
         Kort informationssnutt om när filmen har premiär, regi, 
         skådespelare samt en kort beskrivning av filmen.
     </p>
+    <div class="mytext">
     <iframe 
         width="560"
         height="315"
@@ -32,19 +69,20 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
     ></iframe>
+    </div>
     <p>
         Youtube iframe kommer med frameborder=\"0\" men validator.w3.org 
         säger det är fel.
     </p>
-    <footer>
-         Viktiga länkar läggs längst ned på sidan direkt innan footern. 
-        <h1>Viktiga Länkar:</h1>
-        <ul>
-            <li><a href="https://lexicongruppen.se/">LEXICON</a></li>
-            <li><a href="https://www.w3schools.com">W3Schools</a></li>
-            <li><a href="https://validator.w3.org/">validator.w3.org</a></li>
+</div>
+    <footer class="myfo">
+        Viktiga Länkar:
+        <ul class="myul">
+            <li class="myli"><a href="https://lexicongruppen.se/">LEXICON</a></li>
+            <li class="myli"><a href="https://www.w3schools.com">W3Schools</a></li>
+            <li class="myli"><a href="https://validator.w3.org/">validator.w3.org</a></li>
         </ul>
-        FilmBolaget FS Bottom
+            FilmBolaget FS Bottom. Webmaster: mihaips@gmail.com Uppdraget kommer från FS.
     </footer>
 </body>
 </html>
